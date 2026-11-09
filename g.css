@@ -1,0 +1,130 @@
+/* custom font @font-face{
+	font-family:abex;
+	src: url(../src/MyFont-Regular.otf)
+}*/
+@import url('https://fonts.googleapis.com/css2?family=Flow+Circular&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Redacted+Script:wght@300;400;700&display=swap');
+.filler {
+  /*font-family: "Flow Circular", system-ui
+  font-size:90%;*/
+  font-family: "Redacted Script", cursive;
+  font-weight: 400;
+  font-size:120%;
+  line-height:130%;
+}
+/*-------------------------------------------------------- SEMANTIC TAGS ---------*/
+body{background:white;}
+h3{margin-top:.5em;}
+/*-------------------------------------------------------- NAVIGATION ---------*/
+
+/*-------------------------------------------------------- HOMEPAGE IMAGES ---------*/
+
+/*-------------------------------------------------------- GENERAL IDS ---------*/
+#sidebar{
+	max-width:300px;
+	text-align:center;
+	background:white;
+	position:sticky;
+}
+#sticker{
+	position:sticky;
+	top:3.5em;
+}
+#pfpimg{
+	width:100%;
+	display:block;
+}
+#page{
+	padding:5% 12%;
+	/*margin-top:-150px;*/
+}
+#navi{
+	text-align:left;
+}
+#navi a{
+	width:100%;
+	display:block;
+	text-decoration:none;
+	color:inherit;
+	padding:none;
+	border-left:solid 1px lightgrey;
+}
+#navi nav .nav-link {
+	padding-left:2em;
+}
+#navi>a{
+	font-size:110%;
+}
+/*-------------------------------------------------------- CLASSES ---------*/
+.content{
+	background:white;
+	margin-left:5em;
+	min-height:100px;
+	margin-bottom:2em;
+}
+.SWOTcard{
+	min-width:180px;
+	width:50%;
+	flex:auto;
+}
+.SWOTcol{
+	min-width:300px;
+	width:50%;
+	flex:auto;
+}
+.page{
+	padding:.5em 1em;
+}
+.page img{
+	max-height:500px;
+	max-width:100;
+	margin: 1em auto 1em auto;
+	box-shadow:2px 5px 15px lightgrey;
+	background-size:cover;
+}
+.portfolio{
+	text-align:center;
+	padding:0 1.5em !important;
+}
+.active {
+	font-weight:bold;
+	border-left:solid 1px grey;
+}
+.card-header{
+	background:rgba(0,0,0,.015) !important;
+}
+/*-------------------------------------------------------- BREAKPOINTS ---------*/
+/*--lg--*/
+@media (max-width:1000px) {
+	#page{
+		padding:5%;
+		/*background:red;*/
+	}
+	#sidebar{
+	max-width:180px;
+	}
+}
+/*--md--*/
+@media (max-width:600px) {
+	#page{
+		padding:0;
+		/*background:blue;*/
+	}
+	#sidebar{
+	min-width:100%;
+	padding:0 10% !important;
+	}
+	#pfpimg{
+		max-width:250px;
+		margin:auto;
+	}
+	.content{
+		margin:0;
+	}
+	#page .row{
+		padding:0 2em;
+	}
+	#contentblock{
+		margin:1em 0;
+	}
+}
